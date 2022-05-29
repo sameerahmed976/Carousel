@@ -1,0 +1,87 @@
+/* global reset */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+a {
+  text-decoration: none;
+}
+
+section {
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+/* styles */
+
+.myslide {
+  position: relative;
+  border: 5px solid rgb(82, 82, 82);
+}
+
+.number {
+  position: absolute;
+  color: white;
+  top: 30px;
+  left: 30px;
+}
+
+.caption {
+  position: absolute;
+  color: white;
+  top: 90%;
+  font-size: 2rem;
+  font-weight: 900;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: capitalize;
+  padding-bottom: 5rem;
+}
+
+.images {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.prev {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  font-size: 2rem;
+  color: white;
+  border: 2px soild black;
+  padding: 0.5rem 1rem;
+
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 10px;
+}
+
+.next {
+  position: absolute;
+  padding: 1rem;
+  top: 50%;
+  right: 1%;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  color: white;
+  transform: translate(-50%, -50%);
+  background-color: black;
+  border-radius: 10px;
+}
+
+.next:hover,
+.prev:hover {
+  background-color: white;
+  color: black;
+}
